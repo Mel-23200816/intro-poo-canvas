@@ -4,33 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro Canvas 2D | Minimalist</title>
+    <title>Intro Canvas 2D</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" />
-
-    <link rel="stylesheet" href="./assets/CSS/style.css">
+    
+    <link rel="stylesheet" href="./assets/CSS/styles.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3">
+    <nav class="navbar navbar-expand-lg custom-navbar py-3 border-bottom">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <span class="text-primary">Canvas</span>Lab
+                <span class="text-accent">Canvas</span>Lab
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </nav>
 
@@ -38,7 +27,7 @@
         
         <div class="row mb-5 text-center">
             <div class="col-12">
-                <h1 class="mb-3">Objetos 2D mediante POO</h1>
+                <h1 class="mb-2 fw-bold text-dark">Objetos 2D mediante OOP</h1>
                 <p class="text-muted">Exploración visual utilizando la API de Canvas en HTML5.</p>
             </div>
         </div>
@@ -46,33 +35,45 @@
         <div class="row g-4 text-center justify-content-center">
             
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="canvas-card">
-                    <h2 class="canvas-title">Objeto 2D Estático</h2>
-                    <canvas id="canvasOOP" class="custom-canvas"></canvas>
+                <div class="canvas-wrapper">
+                    <div class="canvas-header">
+                        <h2 class="canvas-title">Objeto 2D Estático</h2>
+                    </div>
+                    <div class="canvas-body">
+                        <canvas id="canvasOOP" class="custom-canvas"></canvas>
+                    </div>
                 </div>
             </div>
 
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="canvas-card">
-                    <h2 class="canvas-title">Objeto con Random</h2>
-                    <canvas id="canvasRandom" class="custom-canvas"></canvas>
+                <div class="canvas-wrapper">
+                    <div class="canvas-header">
+                        <h2 class="canvas-title">Objeto con Random</h2>
+                    </div>
+                    <div class="canvas-body">
+                        <canvas id="canvasRandom" class="custom-canvas"></canvas>
+                    </div>
                 </div>
             </div>
 
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="canvas-card">
-                    <h2 class="canvas-title">Múltiples Objetos</h2>
-                    <canvas id="canvasMultiple" class="custom-canvas"></canvas>
+                <div class="canvas-wrapper">
+                    <div class="canvas-header">
+                        <h2 class="canvas-title">Múltiples Objetos</h2>
+                    </div>
+                    <div class="canvas-body">
+                        <canvas id="canvasMultiple" class="custom-canvas"></canvas>
+                    </div>
                 </div>
             </div>
 
         </div>
     </main>
 
-    <footer class="bg-white border-top py-4 mt-auto">
+    <footer class="custom-footer mt-auto py-5">
         <div class="container text-center">
-            <p class="mb-0 text-muted small">&copy; 2026 Intro Canvas 2D. Todos los derechos reservados.</p>
-        </div>
+            <h5 class="text-accent mb-2">Miguel Angel Cano Alejandro</h5>
+            <p class="mb-1 text-light">Estudiante de 6to Semestre | Instituto Tecnológico de Pachuca</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
